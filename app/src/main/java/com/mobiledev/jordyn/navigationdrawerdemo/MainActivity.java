@@ -14,8 +14,9 @@ import io.fabric.sdk.android.Fabric;
 public class MainActivity extends DrawerActivity {
 
     // Fabric will generate the twitter key and twitter secret for you.
-    private static final String TWITTER_KEY = "this will be generated for you";
-    private static final String TWITTER_SECRET = "this will be generated for you";
+    // https://fabric.io
+    private static final String TWITTER_KEY = "key";
+    private static final String TWITTER_SECRET = "secret";
 
 
     @Override
