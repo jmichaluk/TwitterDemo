@@ -27,11 +27,14 @@ public class AnotherActivity extends DrawerActivity {
 
         frameLayout.addView(activityView);
 
+        //This is the only code I had to write to get the Twitter timeline to show up.
+        //set up list view
         ListView list = (ListView) findViewById(R.id.twitterfeed);
-
+        //build user timeline
         UserTimeline userTimeline = new UserTimeline.Builder().screenName("rrc").build();
-
+        //create timeline adapter
         TweetTimelineListAdapter adapter = new TweetTimelineListAdapter.Builder(this).setTimeline(userTimeline).build();
+        //set the adapter to the list
         list.setAdapter(adapter);
     }
 
